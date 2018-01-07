@@ -13,7 +13,8 @@ export class WebService {
        const response = await this.http.get( this.BASE_URL + '/messages').toPromise();
        this.messages = response.json();
     }
-    postMessage(message) {
-        return this.http.post(this.BASE_URL + '/message', message ).toPromise();
+    async postMessage(message) {
+        const response = await this.http.post(this.BASE_URL + '/message', message ).toPromise();
+        this.messages.push(response.json());
     }
 }
