@@ -4,7 +4,7 @@ import { WebService} from './web.service';
 @Component({
     selector: 'messages',
     template: `<div *ngFor= 'let message of webService.messages'>
-                        <mat-card style="margin:8px">
+                        <mat-card style="margin-top:8px">
                         <mat-card-title>{{message.owner}} </mat-card-title>
                         <mat-card-content>{{message.text}}</mat-card-content>
                         </mat-card>
