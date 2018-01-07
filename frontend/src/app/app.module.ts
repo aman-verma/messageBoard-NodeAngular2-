@@ -9,10 +9,11 @@ import { MessagesComponent } from './messages.component';
 import { WebService} from './web.service';
 import { NewMessagesComponent } from './new-messages.component';
 import { HttpModule } from '@angular/http';
+import { NavComponent } from './nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent, MessagesComponent, NewMessagesComponent
+    AppComponent, MessagesComponent, NewMessagesComponent, NavComponent
   ],
   imports: [
     BrowserModule, HttpModule,
